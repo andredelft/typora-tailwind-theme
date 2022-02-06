@@ -17,25 +17,13 @@
   --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);
   --tw-prose-th-borders: var(--tw-prose-invert-th-borders);
   --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
-}
-
-#write pre.md-meta-block {
-  background: rgb(51 65 85);
-  border-color: rgb(51 65 85);
-  color: rgb(203 213 225);
+  --tw-prose-bg: var(--tw-prose-invert-bg);
+  --tw-prose-meta: var(--tw-prose-invert-meta);
+  --tw-prose-meta-bg: var(--tw-prose-invert-meta-bg);
 }
 
 titlebar {
-  color: white;
-}
-
-content,
-titlebar {
-  background: rgb(30 41 59);
-}
-
-:root {
-  scrollbar-color: rgb(30 41 59) rgb(30 41 59) !important;
+  color: #fff;
 }
 
 .CodeMirror.cm-s-inner {

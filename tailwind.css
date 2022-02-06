@@ -286,6 +286,10 @@ html {
   --tw-prose-pre-bg: var(--slate-800);
   --tw-prose-th-borders: var(--slate-300);
   --tw-prose-td-borders: var(--slate-200);
+  --tw-prose-bg: #fff;
+  --tw-prose-meta: var(--slate-400);
+  --tw-prose-meta-bg: var(--slate-100);
+
   --tw-prose-invert-body: var(--slate-300);
   --tw-prose-invert-headings: #fff;
   --tw-prose-invert-lead: var(--slate-400);
@@ -302,6 +306,9 @@ html {
   --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
   --tw-prose-invert-th-borders: var(--slate-600);
   --tw-prose-invert-td-borders: var(--slate-700);
+  --tw-prose-invert-bg: var(--slate-700);
+  --tw-prose-meta: var(--tw-prose-invert-meta);
+  --tw-prose-meta-bg: var(--tw-prose-invert-meta-bg);
 }
 
 #write {
@@ -317,7 +324,9 @@ body {
 }
 
 /* on Windows/Linux, it is the part that is not titlebar or status bar. */
-content {
+content,
+titlebar {
+  background: var(--tw-body-bg);
 }
 
 #write {
@@ -332,8 +341,8 @@ content {
 
 /* yaml */
 pre.md-meta-block {
-  background-color: var(--slate-100);
-  color: var(--slate-400);
+  color: var(--tw-prose-meta);
+  background-color: var(--tw-prose-meta-bg);
 }
 
 /* headings */
