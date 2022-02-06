@@ -10,3 +10,4 @@ An implementation of the beautifull [Tailwind Typography](https://tailwindcss.co
 
 1. Go to the Typora theme folder (reachable via the settings menu: Appearance > Open theme folder)
 2. Copy `typora.css` and `typora-dark.css` into this folder.
+3. Restart Typora and select either theme from the 'Theme' menu.
