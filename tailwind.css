@@ -632,7 +632,6 @@ p {
 .md-fences {
   color: var(--tw-prose-pre-code);
   background-color: var(--tw-prose-pre-bg);
-  overflow-x: auto;
   font-weight: 400;
   font-size: 0.9em;
   line-height: 1.7777778;
@@ -641,6 +640,21 @@ p {
   border-radius: 0.5rem /* 8px */;
   padding-top: 1.1111111em;
   padding-bottom: 1.1111111em;
+}
+
+.md-fences.md-focus {
+  border-bottom-right-radius: 0;
+}
+
+.md-fences > .code-tooltip {
+  height: 1.8rem;
+  bottom: -1.8rem;
+  font-size: 0.9rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.code-tooltip .ty-input {
+  min-width: 10rem;
 }
 
 pre code {
