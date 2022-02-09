@@ -21,6 +21,14 @@
   --tw-prose-bg: var(--tw-prose-invert-bg);
   --tw-prose-meta: var(--tw-prose-invert-meta);
   --tw-prose-meta-bg: var(--tw-prose-invert-meta-bg);
+
+  --panel-border-color: var(--panel-border-color-inverted);
+  --active-file-bg-color: var(--active-file-bg-color-inverted);
+  --window-border: var(--window-border-inverted);
+  --search-hit-text-bg-color: var(--search-hit-text-bg-color-inverted);
+  --search-hit-text-font-color: var(--search-hit-text-font-color-inverted);
+  --search-select-bg-color: var(--search-select-bg-color-inverted);
+  --blur-text-color: var(--blur-text-color-inverted);
 }
 
 titlebar {

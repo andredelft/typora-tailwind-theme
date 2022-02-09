@@ -35,6 +35,9 @@
   --theme-800: #1e293b;
   --theme-900: #0f172a;
 
+  /* Tailwind variables */
+  --tw-primary: #62bbf3;
+
   --tw-prose-body: var(--theme-700);
   --tw-prose-headings: var(--theme-900);
   --tw-prose-lead: var(--theme-600);
@@ -74,6 +77,40 @@
   --tw-prose-invert-bg: var(--theme-800);
   --tw-prose-invert-meta: var(--theme-600);
   --tw-prose-invert-meta-bg: var(--theme-200);
+
+  /* Typora variables */
+
+  --background: var(--tw-prose-bg);
+  --text-color: var(--tw-prose-body);
+
+  --meta-content-color: var(--theme-500);
+
+  /* Sidebar */
+  --side-bar-bg-color: var(--tw-prose-bg);
+  --active-file-bg-color: var(--theme-100);
+  --active-file-text-color: var(--tw-prose-bold);
+  --active-file-border-color: var(--theme-100);
+  --panel-border-color: var(--theme-300);
+  --blur-text-color: var(--theme-300);
+  --window-border: 1px solid var(--theme-200);
+  --item-hover-bg-color: var(--theme-100);
+  --primary-color: var(--tw-primary);
+  --search-hit-text-bg-color: var(--theme-200);
+  --search-hit-text-font-color: inherit;
+  --search-select-text-color: var(--select-text-font-color);
+  --search-select-bg-color: var(--select-text-bg-color);
+
+  --blur-text-color-inverted: var(--theme-500);
+  --panel-border-color-inverted: var(--theme-700);
+  --active-file-bg-color-inverted: var(--theme-700);
+  --window-border-inverted: 1px solid var(--theme-700);
+  --search-hit-text-bg-color-inverted: var(--theme-700);
+  --search-hit-text-font-color-inverted: #fff;
+  --search-select-bg-color-inverted: var(--theme-400);
+}
+
+.ty-file-search-match-text {
+  background-color: var(--search-hit-text-bg-color);
 }
 
 /* TAILWIND RESET */
@@ -701,7 +738,7 @@ pre code::after {
   color: #7dd4fc;
 }
 .cm-s-inner span.cm-number {
-  color: #99f6e3;
+  color: #fde68a;
 }
 .cm-s-inner span.cm-attribute,
 .cm-s-inner span.cm-property,
@@ -800,6 +837,10 @@ p > .md-image:only-child {
   margin-bottom: 0.8em !important;
 }
 
+.md-image:only-child > img {
+  border-radius: 0.5rem;
+}
+
 /* extend styles */
 
 mark {
@@ -855,6 +896,10 @@ sup {
 .pin-outline #outline-dropmenu {
 }
 
+.file-list-item-file-ext-part {
+  opacity: 0.5;
+}
+
 /* when sidepanel is visible */
 .pin-outline #write {
 }
@@ -871,6 +916,21 @@ sup {
 
 #write div.md-toc-tooltip {
   background-color: white;
+}
+
+#typora-sidebar {
+  border-right: var(--window-border);
+}
+
+.sidebar-tab {
+  text-transform: none;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.md-search-hit {
+  color: var(--search-hit-text-font-color);
+  background-color: var(--search-hit-text-bg-color);
 }
 
 /**
