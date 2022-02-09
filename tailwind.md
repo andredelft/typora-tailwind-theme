@@ -192,7 +192,7 @@ What I've written here is probably long enough, but adding this final sentence c
 
 ## Syntax highlighting
 
-We already showed some examples of codeblocks `html` and `js`. Here are some other popular formats, to demo the syntax highlighting:
+We already showed some examples of codeblocks in `html` and `js`. Here are some other popular formats, to demo the syntax highlighting:
 
 ### CSS
 
