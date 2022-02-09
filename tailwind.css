@@ -258,62 +258,56 @@ textarea {
 
 /* TAILWIND PROSE VARIABLES */
 
-html {
-  --slate-50: #f8fafc;
-  --slate-100: #f1f5f9;
-  --slate-200: #e2e8f0;
-  --slate-300: #cbd5e1;
-  --slate-400: #94a3b8;
-  --slate-500: #64748b;
-  --slate-600: #475569;
-  --slate-700: #334155;
-  --slate-800: #1e293b;
-  --slate-900: #0f172a;
+:root {
+  /* Slate color scheme */
+  --theme-50: #f8fafc;
+  --theme-100: #f1f5f9;
+  --theme-200: #e2e8f0;
+  --theme-300: #cbd5e1;
+  --theme-400: #94a3b8;
+  --theme-500: #64748b;
+  --theme-600: #475569;
+  --theme-700: #334155;
+  --theme-800: #1e293b;
+  --theme-900: #0f172a;
 
-  --tw-prose-body: var(--slate-700);
-  --tw-prose-headings: var(--slate-900);
-  --tw-prose-lead: var(--slate-600);
-  --tw-prose-links: var(--slate-900);
-  --tw-prose-bold: var(--slate-900);
-  --tw-prose-counters: var(--slate-500);
-  --tw-prose-bullets: var(--slate-300);
-  --tw-prose-hr: var(--slate-200);
-  --tw-prose-quotes: var(--slate-900);
-  --tw-prose-quote-borders: var(--slate-200);
-  --tw-prose-captions: var(--slate-500);
-  --tw-prose-code: var(--slate-900);
-  --tw-prose-pre-code: var(--slate-200);
-  --tw-prose-pre-bg: var(--slate-800);
-  --tw-prose-th-borders: var(--slate-300);
-  --tw-prose-td-borders: var(--slate-200);
-  --tw-prose-bg: #fff;
-  --tw-prose-meta: var(--slate-400);
-  --tw-prose-meta-bg: var(--slate-100);
-
-  --tw-prose-invert-body: var(--slate-300);
+  --tw-prose-body: var(--theme-700);
+  --tw-prose-headings: var(--theme-900);
+  --tw-prose-lead: var(--theme-600);
+  --tw-prose-links: var(--theme-900);
+  --tw-prose-bold: var(--theme-900);
+  --tw-prose-counters: var(--theme-500);
+  --tw-prose-bullets: var(--theme-300);
+  --tw-prose-hr: var(--theme-200);
+  --tw-prose-quotes: var(--theme-900);
+  --tw-prose-quote-borders: var(--theme-200);
+  --tw-prose-captions: var(--theme-500);
+  --tw-prose-code: var(--theme-900);
+  --tw-prose-pre-code: var(--theme-200);
+  --tw-prose-pre-bg: var(--theme-800);
+  --tw-prose-th-borders: var(--theme-300);
+  --tw-prose-td-borders: var(--theme-200);
+  --tw-prose-invert-body: var(--theme-300);
   --tw-prose-invert-headings: #fff;
-  --tw-prose-invert-lead: var(--slate-400);
+  --tw-prose-invert-lead: var(--theme-400);
   --tw-prose-invert-links: #fff;
   --tw-prose-invert-bold: #fff;
-  --tw-prose-invert-counters: var(--slate-400);
-  --tw-prose-invert-bullets: var(--slate-600);
-  --tw-prose-invert-hr: var(--slate-700);
-  --tw-prose-invert-quotes: var(--slate-100);
-  --tw-prose-invert-quote-borders: var(--slate-700);
-  --tw-prose-invert-captions: var(--slate-400);
+  --tw-prose-invert-counters: var(--theme-400);
+  --tw-prose-invert-bullets: var(--theme-600);
+  --tw-prose-invert-hr: var(--theme-700);
+  --tw-prose-invert-quotes: var(--theme-100);
+  --tw-prose-invert-quote-borders: var(--theme-700);
+  --tw-prose-invert-captions: var(--theme-400);
   --tw-prose-invert-code: #fff;
-  --tw-prose-invert-pre-code: var(--slate-300);
+  --tw-prose-invert-pre-code: var(--theme-300);
   --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
-  --tw-prose-invert-th-borders: var(--slate-600);
-  --tw-prose-invert-td-borders: var(--slate-700);
-  --tw-prose-invert-bg: var(--slate-700);
-  --tw-prose-meta: var(--tw-prose-invert-meta);
-  --tw-prose-meta-bg: var(--tw-prose-invert-meta-bg);
+  --tw-prose-invert-th-borders: var(--theme-600);
+  --tw-prose-invert-td-borders: var(--theme-700);
 }
 
 #write {
-  font-size: 1.3rem;
-  line-height: 1.75;
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.8;
 }
 
 /* TAILWIND PROSE IMPLEMENTATION */
@@ -324,14 +318,20 @@ body {
 }
 
 /* on Windows/Linux, it is the part that is not titlebar or status bar. */
-content,
-titlebar {
-  background: var(--tw-body-bg);
+content {
 }
 
 #write {
   color: var(--tw-prose-body);
   max-width: 60ch;
+}
+
+#write :where(:first-child) {
+  margin-top: 0;
+}
+
+#write :where(:last-child) {
+  margin-bottom: 0;
 }
 
 /**
@@ -341,21 +341,18 @@ titlebar {
 
 /* yaml */
 pre.md-meta-block {
-  color: var(--tw-prose-meta);
-  background-color: var(--tw-prose-meta-bg);
+  background-color: var(--theme-100);
+  color: var(--theme-400);
 }
 
 /* headings */
 h1 {
   color: var(--tw-prose-headings);
   font-weight: 800;
-  font-size: 2.25em;
-  margin-bottom: 0.8888889em;
-  line-height: 1.1111111;
-}
-
-h1 {
+  font-size: 2.8em;
   margin-top: 0;
+  margin-bottom: 0.8571429em;
+  line-height: 1;
 }
 
 h1 strong {
@@ -365,10 +362,10 @@ h1 strong {
 h2 {
   color: var(--tw-prose-headings);
   font-weight: 700;
-  font-size: 1.5em;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  line-height: 1.3333333;
+  font-size: 1.8em;
+  margin-top: 1.5555556em;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
 }
 
 h2 strong {
@@ -378,10 +375,10 @@ h2 strong {
 h3 {
   color: var(--tw-prose-headings);
   font-weight: 600;
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin-top: 1.6em;
-  margin-bottom: 0.6em;
-  line-height: 1.6;
+  margin-bottom: 0.6666667em;
+  line-height: 1.3333333;
 }
 
 h3 strong {
@@ -391,9 +388,9 @@ h3 strong {
 h4 {
   color: var(--tw-prose-headings);
   font-weight: 600;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  line-height: 1.5;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+  line-height: 1.6;
 }
 
 h4 strong {
@@ -401,7 +398,7 @@ h4 strong {
 }
 
 h2 code {
-  font-size: 0.875em;
+  font-size: 0.8611111em;
 }
 
 h3 code {
@@ -428,8 +425,8 @@ table {
   text-align: left;
   margin-top: 2em;
   margin-bottom: 2em;
-  font-size: 0.875em;
-  line-height: 1.7142857;
+  font-size: 0.9em;
+  line-height: 1.5555556;
 }
 
 /* table header */
@@ -443,9 +440,9 @@ thead th {
   color: var(--tw-prose-headings);
   font-weight: 600;
   vertical-align: bottom;
-  padding-right: 0.5714286em;
-  padding-bottom: 0.5714286em;
-  padding-left: 0.5714286em;
+  padding-right: 0.6666667em;
+  padding-bottom: 0.8888889em;
+  padding-left: 0.6666667em;
 }
 
 thead th:first-child {
@@ -467,10 +464,10 @@ tbody tr:last-child {
 
 tbody td {
   vertical-align: baseline;
-  padding-top: 0.5714286em;
-  padding-right: 0.5714286em;
-  padding-bottom: 0.5714286em;
-  padding-left: 0.5714286em;
+  padding-top: 0.8888889em;
+  padding-right: 0.6666667em;
+  padding-bottom: 0.8888889em;
+  padding-left: 0.6666667em;
 }
 
 tbody td:first-child {
@@ -498,17 +495,17 @@ th {
 
 ol {
   list-style-type: decimal;
-  padding-left: 1.625em;
+  padding-left: 1.6em;
 }
 
 li {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
 }
 
 ul {
   list-style-type: disc;
-  padding-left: 1.625em;
+  padding-left: 1.6em;
 }
 
 #write ul.task-list {
@@ -532,41 +529,32 @@ ul > li::marker {
   color: var(--tw-prose-bullets);
 }
 
+ul > li,
 ol > li {
-  padding-left: 0.375em;
-}
-
-ul > li {
-  padding-left: 0.375em;
+  padding-left: 0.4em;
 }
 
 ul > li p {
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 
-#write > ul > li > *:first-child {
-  margin-top: 1.25em;
-}
-
-#write > ul > li > *:last-child {
-  margin-bottom: 1.25em;
-}
-
+#write > ul > li > *:first-child,
 #write > ol > li > *:first-child {
-  margin-top: 1.25em;
+  margin-top: 1.2em;
 }
 
+#write > ul > li > *:last-child,
 #write > ol > li > *:last-child {
-  margin-bottom: 1.25em;
+  margin-bottom: 1.2em;
 }
 
 ul ul,
 ul ol,
 ol ul,
 ol ol {
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 
 /* blockquote */
@@ -579,7 +567,7 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
   margin-top: 1.6em;
   margin-bottom: 1.6em;
-  padding-left: 1em;
+  padding-left: 1.0666667em;
 }
 
 blockquote p:first-of-type::before {
@@ -594,8 +582,8 @@ blockquote p:last-of-type::after {
 hr {
   border-color: var(--tw-prose-hr);
   border-top-width: 1px;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 2.8em;
+  margin-bottom: 2.8em;
 }
 
 hr + * {
@@ -603,23 +591,23 @@ hr + * {
 }
 
 p {
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
 }
 
 pre {
   color: var(--tw-prose-pre-code);
   overflow-x: auto;
   font-weight: 400;
-  font-size: 0.875em;
-  line-height: 1.7142857;
-  margin-top: 1.7142857em;
-  margin-bottom: 1.7142857em;
-  border-radius: 0.375rem;
-  padding-top: 0.8571429em;
-  padding-right: 1.1428571em;
-  padding-bottom: 0.8571429em;
-  padding-left: 1.1428571em;
+  font-size: 0.9em;
+  line-height: 1.7777778;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 0.5rem /* 8px */;
+  padding-top: 1.1111111em;
+  padding-right: 1.3333333em;
+  padding-bottom: 1.1111111em;
+  padding-left: 1.3333333em;
 }
 
 pre code {
@@ -691,10 +679,18 @@ pre code::after {
 
 /* basic styles */
 
+.prose-xl :where(h2 code):not(:where([class~="not-prose"] *)) {
+}
+.prose-xl :where(h3 code):not(:where([class~="not-prose"] *)) {
+  font-size: 0.9em;
+}
+.prose-xl :where(pre):not(:where([class~="not-prose"] *)) {
+}
+
 code {
   color: var(--tw-prose-code);
   font-weight: 600;
-  font-size: 0.875em;
+  font-size: 0.9em;
 }
 
 code::before {
@@ -723,10 +719,10 @@ a {
   font-weight: 500;
 }
 
-img {
+/* img {
   margin-top: 2em;
   margin-bottom: 2em;
-}
+} */
 
 /* extend styles */
 

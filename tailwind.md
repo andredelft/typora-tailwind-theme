@@ -1,6 +1,6 @@
-<img src="/Users/andrevandelft/Documents/Projects/Typora-Tailwind/typora-tailwind-theme/tailwind-logo.svg" style="zoom: 150%;" />
+<img src="tailwind-logo.svg" style="zoom: 150%" />
 
-Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.
+Until now, trying to style an article, document, or blogpost with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.
 
 By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you _really are_ just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
 
@@ -55,7 +55,9 @@ Something a wise person once told me about typography is:
 
 > Typography is pretty important if you don't want your stuff to look like trash. Make it good then it won't be bad.
 
-It's probably important that images look okay here by default as well: ![img](https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
+It's probably important that images look okay here by default as well: 
+
+![img](https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
 
 Now I'm going to show you an example of an unordered list to make sure that looks good, too:
 
@@ -97,7 +99,7 @@ I think most people are going to use [highlight.js](https://highlightjs.org/) or
 
 Here's what a default `tailwind.config.js` file looks like at the time of writing:
 
-```
+```js
 module.exports = {
   purge: [],
   theme: {
@@ -105,7 +107,7 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-}
+};
 ```
 
 Hopefully that looks good enough to you.
@@ -156,13 +158,13 @@ I almost forgot to mention links, like [this link to the Tailwind CSS website](h
 
 We even included table styles, check it out:
 
-| Wrestler                | Origin       | Finisher           |
-| ----------------------- | ------------ | ------------------ |
-| Bret "The Hitman" Hart  | Calgary, AB  | Sharpshooter       |
-| Stone Cold Steve Austin | Austin, TX   | Stone Cold Stunner |
-| Randy Savage            | Sarasota, FL | Elbow Drop         |
-| Vader                   | Boulder, CO  | Vader Bomb         |
-| Razor Ramon             | Chuluota, FL | Razor's Edge       |
+| Wrestler                |    Origin    |           Finisher |
+| ----------------------- | :----------: | -----------------: |
+| Bret "The Hitman" Hart  | Calgary, AB  |       Sharpshooter |
+| Stone Cold Steve Austin |  Austin, TX  | Stone Cold Stunner |
+| Randy Savage            | Sarasota, FL |         Elbow Drop |
+| Vader                   | Boulder, CO  |         Vader Bomb |
+| Razor Ramon             | Chuluota, FL |       Razor's Edge |
 
 We also need to make sure inline code looks good, like if I wanted to talk about `<span>` elements or tell you the good news about `@tailwindcss/typography`.
 
