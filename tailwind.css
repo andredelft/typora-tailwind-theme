@@ -335,6 +335,8 @@ titlebar {
 }
 
 #write {
+  padding-top: 100px;
+  padding-bottom: 100px;
   color: var(--tw-prose-body);
   max-width: 60ch;
 }
@@ -595,12 +597,11 @@ blockquote p:last-of-type::after {
 hr {
   border-color: var(--tw-prose-hr);
   border-top-width: 1px;
-  margin-top: 2.8em;
-  margin-bottom: 2.8em;
 }
 
-hr + * {
-  margin-top: 0;
+[mdtype="hr"] {
+  margin-top: 2.8em;
+  margin-bottom: 2.8em;
 }
 
 p {
