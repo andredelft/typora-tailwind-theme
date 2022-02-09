@@ -700,12 +700,17 @@ pre code::after {
 .cm-s-inner span.cm-string {
   color: #7dd4fc;
 }
+.cm-s-inner span.cm-number {
+  color: #99f6e3;
+}
 .cm-s-inner span.cm-attribute,
 .cm-s-inner span.cm-property,
 .cm-s-inner span.cm-variable,
 .cm-s-inner span.cm-variable-2,
 .cm-s-inner span.cm-variable-3,
-.cm-s-inner span.cm-type {
+.cm-s-inner span.cm-type,
+.cm-s-inner span.cm-atom,
+.cm-s-inner span.cm-def {
   color: #cbd5e1;
 }
 .cm-s-inner span.cm-bracket,
@@ -715,11 +720,17 @@ pre code::after {
 .cm-s-inner span.cm-comment {
   color: #94a3b8;
 }
-.cm-s-inner span.cm-tag {
+.cm-s-inner span.cm-tag,
+.cm-s-inner span.cm-keyword,
+.cm-s-inner span.cm-qualifier {
   color: #f472b5;
 }
 .cm-s-inner span.cm-operator {
   color: #94a3b8;
+}
+
+.cm-s-inner span.cm-link {
+  text-decoration: underline;
 }
 
 /* The following codemirror selectors are resets, will do them sometime maybe */
@@ -727,15 +738,10 @@ pre code::after {
 .cm-s-inner .CodeMirror-guttermarker,
 .cm-s-inner .CodeMirror-guttermarker-subtle,
 .cm-s-inner .CodeMirror-linenumber,
-.cm-s-inner span.cm-atom,
-.cm-s-inner span.cm-number,
 .cm-s-inner span.cm-comment.cm-def,
 .cm-s-inner span.cm-comment.cm-type,
-.cm-s-inner span.cm-attribute,
-.cm-s-inner span.cm-keyword,
 .cm-s-inner span.cm-builtin,
 .cm-s-inner span.cm-type,
-.cm-s-inner span.cm-def,
 .cm-s-inner span.cm-header,
 .cm-s-inner span.cm-link,
 .cm-s-inner span.cm-error {
@@ -786,10 +792,13 @@ a {
   font-weight: 500;
 }
 
-/* img {
-  margin-top: 2em;
-  margin-bottom: 2em;
-} */
+/* A block-level image should have a total top and bottom margin of 2em.
+It is always wrapped in a paragraph with 1.2em vertical margin, hence we
+add 0.8 here */
+p > .md-image:only-child {
+  margin-top: 0.8em !important;
+  margin-bottom: 0.8em !important;
+}
 
 /* extend styles */
 

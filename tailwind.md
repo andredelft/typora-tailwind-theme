@@ -95,7 +95,7 @@ After this sort of list I usually have a closing statement or paragraph, because
 
 ## Code should look okay by default.
 
-I think most people are going to use [highlight.js](https://highlightjs.org/) or [Prism](https://prismjs.com/) or something if they want to style their code blocks but it wouldn't hurt to make them look _okay_ out of the box, even with no syntax highlighting.
+I think most people are going to use [highlight.js](https://highlightjs.org/) or [Prism](https://prismjs.com/) or something if they want to style their code blocks but it wouldn't hurt to make them look _okay_ out of the box.
 
 Here's what a default `tailwind.config.js` file looks like at the time of writing:
 
@@ -189,3 +189,146 @@ Phew, with any luck we have styled the headings above this text and they look pr
 Let's add a closing paragraph here so things end with a decently sized block of text. I can't explain why I want things to end that way but I have to assume it's because I think things will look weird or unbalanced if there is a heading too close to the end of the document.
 
 What I've written here is probably long enough, but adding this final sentence can't hurt.
+
+## Syntax highlighting
+
+We already showed some examples of codeblocks `html` and `js`. Here are some other popular formats, to demo the syntax highlighting:
+
+### CSS
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  /* ... */
+}
+
+body {
+  font-family: "Crimson Pro", "Alegreya", serif;
+  margin: 0;
+  font-size: 20px;
+  --link-color: rgb(57, 139, 152);
+  --link-background-color: rgba(100, 143, 150, 0.1);
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 1rem;
+}
+```
+
+### Python
+
+```python
+from unidecode import unidecode
+import re
+
+from django.template.defaultfilters import slugify as _slugify
+
+PREFIXES = ["der", "die", "das", "den"]
+
+PREFIX_FILTER = re.compile(fr'^(?:{"|".join(PREFIXES)})\s+')
+
+
+def gen_sort_key(value):
+    # Normalize unicode
+    value = unidecode(value)
+    # Convert to lowercase
+    value = value.lower()
+    # Filter some prefixes
+    value, n = PREFIX_FILTER.subn("", value)
+    while n:
+        value, n = PREFIX_FILTER.subn("", value)
+    return value
+
+
+def slugify(value):
+    """Slugify function extended with `unidecode` for better unicode representation"""
+    return _slugify(unidecode(value))
+```
+
+### JSON
+
+```json
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "isAlive": true,
+  "age": 27,
+  "address": {
+    "streetAddress": "21 2nd Street",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10021-3100"
+  },
+  "phoneNumbers": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    }
+  ],
+  "children": [],
+  "spouse": null
+}
+```
+
+### YAML
+
+```yaml
+address:
+  city: New York
+  postalCode: 10021-3100
+  state: NY
+  streetAddress: 21 2nd Street
+age: 27
+children: []
+firstName: John
+isAlive: true
+lastName: Smith
+phoneNumbers:
+  - number: 212 555-1234
+    type: home
+  - number: 646 555-4567
+    type: office
+spouse: null
+```
+
+### JSX
+
+```jsx
+<>
+  <Title>{users.name}</Title>
+  <Header>
+    <div className="flex items-center gap-8 text-xl truncate">
+      {tabs.map((tabName, i) => (
+        <a
+          key={i}
+          className={
+            tabName === activeTab
+              ? "font-semibold p-2"
+              : "block p-2 transition-colors rounded-md hover:bg-transparent-white cursor-pointer"
+          }
+          onClick={() => setActiveTab(tabName)}
+        >
+          {tabName}
+        </a>
+      ))}
+    </div>
+  </Header>
+  <UsersGrid />
+</>
+```
