@@ -1,3 +1,7 @@
+@import "tailwind-light.user.css";
+
+/* FONTS */
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -14,6 +18,62 @@
   font-display: swap;
   src: url("tailwind/Inter-italic.ttf") format("truetype");
   font-named-instance: "Italic";
+}
+
+/* VARIABLES */
+
+:root {
+  /* Slate color scheme */
+  --theme-50: #f8fafc;
+  --theme-100: #f1f5f9;
+  --theme-200: #e2e8f0;
+  --theme-300: #cbd5e1;
+  --theme-400: #94a3b8;
+  --theme-500: #64748b;
+  --theme-600: #475569;
+  --theme-700: #334155;
+  --theme-800: #1e293b;
+  --theme-900: #0f172a;
+
+  --tw-prose-body: var(--theme-700);
+  --tw-prose-headings: var(--theme-900);
+  --tw-prose-lead: var(--theme-600);
+  --tw-prose-links: var(--theme-900);
+  --tw-prose-bold: var(--theme-900);
+  --tw-prose-counters: var(--theme-500);
+  --tw-prose-bullets: var(--theme-300);
+  --tw-prose-hr: var(--theme-200);
+  --tw-prose-quotes: var(--theme-900);
+  --tw-prose-quote-borders: var(--theme-200);
+  --tw-prose-captions: var(--theme-500);
+  --tw-prose-code: var(--theme-900);
+  --tw-prose-pre-code: var(--theme-200);
+  --tw-prose-pre-bg: var(--theme-800);
+  --tw-prose-th-borders: var(--theme-300);
+  --tw-prose-td-borders: var(--theme-200);
+  --tw-prose-bg: #fff;
+  --tw-prose-meta: var(--theme-400);
+  --tw-prose-meta-bg: var(--theme-100);
+
+  --tw-prose-invert-body: var(--theme-300);
+  --tw-prose-invert-headings: #fff;
+  --tw-prose-invert-lead: var(--theme-400);
+  --tw-prose-invert-links: #fff;
+  --tw-prose-invert-bold: #fff;
+  --tw-prose-invert-counters: var(--theme-400);
+  --tw-prose-invert-bullets: var(--theme-600);
+  --tw-prose-invert-hr: var(--theme-700);
+  --tw-prose-invert-quotes: var(--theme-100);
+  --tw-prose-invert-quote-borders: var(--theme-700);
+  --tw-prose-invert-captions: var(--theme-400);
+  --tw-prose-invert-code: #fff;
+  --tw-prose-invert-pre-code: var(--theme-300);
+  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+  --tw-prose-invert-th-borders: var(--theme-600);
+  --tw-prose-invert-td-borders: var(--theme-700);
+  --tw-prose-invert-bg: var(--theme-800);
+  --tw-prose-invert-meta: var(--theme-600);
+  --tw-prose-invert-meta-bg: var(--theme-200);
 }
 
 /* TAILWIND RESET */
@@ -256,61 +316,12 @@ textarea {
   resize: vertical;
 }
 
-/* TAILWIND PROSE VARIABLES */
-
-:root {
-  /* Slate color scheme */
-  --theme-50: #f8fafc;
-  --theme-100: #f1f5f9;
-  --theme-200: #e2e8f0;
-  --theme-300: #cbd5e1;
-  --theme-400: #94a3b8;
-  --theme-500: #64748b;
-  --theme-600: #475569;
-  --theme-700: #334155;
-  --theme-800: #1e293b;
-  --theme-900: #0f172a;
-
-  --tw-prose-body: var(--theme-700);
-  --tw-prose-headings: var(--theme-900);
-  --tw-prose-lead: var(--theme-600);
-  --tw-prose-links: var(--theme-900);
-  --tw-prose-bold: var(--theme-900);
-  --tw-prose-counters: var(--theme-500);
-  --tw-prose-bullets: var(--theme-300);
-  --tw-prose-hr: var(--theme-200);
-  --tw-prose-quotes: var(--theme-900);
-  --tw-prose-quote-borders: var(--theme-200);
-  --tw-prose-captions: var(--theme-500);
-  --tw-prose-code: var(--theme-900);
-  --tw-prose-pre-code: var(--theme-200);
-  --tw-prose-pre-bg: var(--theme-800);
-  --tw-prose-th-borders: var(--theme-300);
-  --tw-prose-td-borders: var(--theme-200);
-  --tw-prose-invert-body: var(--theme-300);
-  --tw-prose-invert-headings: #fff;
-  --tw-prose-invert-lead: var(--theme-400);
-  --tw-prose-invert-links: #fff;
-  --tw-prose-invert-bold: #fff;
-  --tw-prose-invert-counters: var(--theme-400);
-  --tw-prose-invert-bullets: var(--theme-600);
-  --tw-prose-invert-hr: var(--theme-700);
-  --tw-prose-invert-quotes: var(--theme-100);
-  --tw-prose-invert-quote-borders: var(--theme-700);
-  --tw-prose-invert-captions: var(--theme-400);
-  --tw-prose-invert-code: #fff;
-  --tw-prose-invert-pre-code: var(--theme-300);
-  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
-  --tw-prose-invert-th-borders: var(--theme-600);
-  --tw-prose-invert-td-borders: var(--theme-700);
-}
+/* TAILWIND PROSE IMPLEMENTATION */
 
 #write {
   font-size: 1.25rem /* 20px */;
   line-height: 1.8;
 }
-
-/* TAILWIND PROSE IMPLEMENTATION */
 
 html,
 body {
@@ -318,7 +329,9 @@ body {
 }
 
 /* on Windows/Linux, it is the part that is not titlebar or status bar. */
-content {
+content,
+titlebar {
+  background: var(--tw-prose-bg);
 }
 
 #write {
@@ -341,8 +354,8 @@ content {
 
 /* yaml */
 pre.md-meta-block {
-  background-color: var(--theme-100);
-  color: var(--theme-400);
+  color: var(--tw-prose-meta);
+  background-color: var(--tw-prose-meta-bg);
 }
 
 /* headings */

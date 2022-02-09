@@ -4,16 +4,12 @@ An implementation of the beautifull [Tailwind Typography](https://tailwindcss.co
 
 ![Screenshot of the Tailwind theme](tailwind-screenshot.png)
 
-A light and dark theme are provided, which use the `prose-xl` class and `slate` color scheme. In particular, the 'Tailwind' theme is equivalent to:
+A light and dark theme are provided, which use the `prose-xl` class and `slate` color scheme. In particular, the themes are equivalent to:
 
 ```html
-<article class="prose prose-xl prose-slate">...</article>
-```
-
-And the 'Tailwind Dark' theme is equivalent to:
-
-```html
-<article class="prose prose-xl prose-slate prose-invert">...</article>
+<article class="prose prose-xl prose-slate dark:prose-invert dark:bg-slate-800">
+  ...
+</article>
 ```
 
 **NB: This theme is still a work in progress**. Refer to the [issues page](https://github.com/andredelft/typora-tailwind-theme/issues) for a rundown of to-do's.
