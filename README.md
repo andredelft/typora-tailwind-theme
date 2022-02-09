@@ -17,7 +17,7 @@ A light and dark theme are provided, which use the `prose-xl` class and `slate` 
 ## Installation
 
 1. Go to the Typora theme folder (reachable via the settings menu: Appearance > Open theme folder)
-2. Copy `typora.css` and `typora-dark.css` into this folder.
+2. Copy `tailwind.css` and `tailwind-dark.css` into this folder.
 3. Restart Typora and select either theme from the 'Theme' menu.
 
 ## Customization
