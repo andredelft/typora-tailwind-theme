@@ -55,7 +55,7 @@ Something a wise person once told me about typography is:
 
 > Typography is pretty important if you don't want your stuff to look like trash. Make it good then it won't be bad.
 
-It's probably important that images look okay here by default as well: 
+It's probably important that images look okay here by default as well:
 
 ![img](https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
 
