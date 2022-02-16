@@ -29,6 +29,7 @@
   --search-hit-text-font-color: var(--search-hit-text-font-color-inverted);
   --search-select-bg-color: var(--search-select-bg-color-inverted);
   --blur-text-color: var(--blur-text-color-inverted);
+  --item-hover-bg-color: var(--item-hover-bg-color-inverted);
 }
 
 titlebar {

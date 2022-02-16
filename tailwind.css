@@ -109,6 +109,7 @@
   --search-hit-text-font-color-inverted: #fff;
   --search-select-bg-color-inverted: var(--theme-400);
   --rawblock-edit-panel-bd: var(--tw-prose-pre-bg);
+  --item-hover-bg-color-inverted: var(--theme-700);
 }
 
 .ty-file-search-match-text {
