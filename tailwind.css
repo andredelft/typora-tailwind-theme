@@ -81,6 +81,7 @@
   /* Typora variables */
 
   --background: var(--tw-prose-bg);
+  --bg-color: var(--tw-prose-bg);
   --text-color: var(--tw-prose-body);
 
   --meta-content-color: var(--theme-500);
@@ -107,6 +108,7 @@
   --search-hit-text-bg-color-inverted: var(--theme-700);
   --search-hit-text-font-color-inverted: #fff;
   --search-select-bg-color-inverted: var(--theme-400);
+  --rawblock-edit-panel-bd: var(--tw-prose-pre-bg);
 }
 
 .ty-file-search-match-text {
@@ -530,15 +532,6 @@ tbody td:last-child {
   padding-right: 0;
 }
 
-/* table row */
-tr {
-}
-
-/* table cell */
-td,
-th {
-}
-
 /* tooltip above tables */
 .md-table-edit {
 }
@@ -660,6 +653,21 @@ p {
 
 /* footnote definition */
 .md-def-footnote {
+}
+
+.md-rawblock.md-rawblock-on-edit,
+.md-rawblock:hover {
+  color: var(--tw-prose-pre-code);
+}
+
+.md-htmlblock-container,
+.md-rawblock-input.md-rawblock-control,
+.md-htmlblock-panel.md-rawblock-control {
+  border-radius: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.md-rawblock-tooltip {
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 /**
