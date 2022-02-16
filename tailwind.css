@@ -6,7 +6,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 100 900;
-  font-display: swap;
+  font-display: block;
   src: url("tailwind/Inter-roman.ttf") format("truetype");
   font-named-instance: "Regular";
 }
@@ -15,7 +15,7 @@
   font-family: "Inter";
   font-style: italic;
   font-weight: 100 900;
-  font-display: swap;
+  font-display: block;
   src: url("tailwind/Inter-italic.ttf") format("truetype");
   font-named-instance: "Italic";
 }
