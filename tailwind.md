@@ -48,9 +48,6 @@ It's important to cover all of these use cases for a few reasons:
 Here is a checklist!
 
 - [x] I have done this thing
-
-  Some other paragraph.
-
 - [ ] But not this one
 
 Now we're going to try out another header style.

@@ -602,7 +602,9 @@ ol > li p {
 }
 
 #write > ul > li > not(input):first-child,
-#write > ol > li > not(input):first-child {
+#write > ol > li > not(input):first-child,
+#write > ul > li > input + *:first-child,
+#write > ol > li > input + *:first-child {
   margin-top: 1.2em;
 }
 
@@ -611,8 +613,10 @@ ol > li p {
   margin-bottom: 1.2em;
 }
 
-#write > ul > li > p:only-child,
-#write > ol > li > p:only-child {
+#write ul > li > p:only-child,
+#write ol > li > p:only-child,
+#write ul > li > input + p:last-child,
+#write ol > li > input + p:last-child {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -851,7 +855,8 @@ pre code::after {
   color: var(--code-operator);
 }
 .cm-s-inner span.cm-bracket,
-.cm-s-inner span.cm-tag.cm-bracket {
+.cm-s-inner span.cm-tag.cm-bracket,
+.cm-s-inner span.cm-meta {
   color: var(--code-bracket);
 }
 
