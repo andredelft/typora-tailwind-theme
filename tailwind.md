@@ -45,6 +45,14 @@ It's important to cover all of these use cases for a few reasons:
 2. Really just the first reason, that's the whole point of the plugin.
 3. Here's a third pretend reason though a list with three items looks more realistic than a list with two items.
 
+Here is a checklist!
+
+- [x] I have done this thing
+
+  Some other paragraph.
+
+- [ ] But not this one
+
 Now we're going to try out another header style.
 
 ### Typography should be easy
@@ -167,6 +175,8 @@ We even included table styles, check it out:
 | Razor Ramon             | Chuluota, FL |       Razor's Edge |
 
 We also need to make sure inline code looks good, like if I wanted to talk about `<span>` elements or tell you the good news about `@tailwindcss/typography`.
+
+<!-- Some comment -->
 
 ### Sometimes I even use `code` in headings
 

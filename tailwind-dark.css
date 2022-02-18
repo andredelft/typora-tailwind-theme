@@ -12,9 +12,8 @@
   --tw-prose-hr: var(--tw-prose-invert-hr);
   --tw-prose-quotes: var(--tw-prose-invert-quotes);
   --tw-prose-quote-borders: var(--tw-prose-invert-quote-borders);
-  --tw-prose-captions: var(--tw-prose-invert-captions);
   --tw-prose-code: var(--tw-prose-invert-code);
-  --tw-prose-pre-code: var(--tw-prose-invert-pre-code);
+  --tw-prose-captions: var(--tw-prose-invert-captions);
   --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);
   --tw-prose-th-borders: var(--tw-prose-invert-th-borders);
   --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
@@ -22,6 +21,8 @@
   --tw-prose-meta: var(--tw-prose-invert-meta);
   --tw-prose-meta-bg: var(--tw-prose-invert-meta-bg);
 
+  --md-char-color: var(--md-char-color-inverted);
+  --meta-content-color: var(--meta-content-color-inverted);
   --panel-border-color: var(--panel-border-color-inverted);
   --active-file-bg-color: var(--active-file-bg-color-inverted);
   --window-border: var(--window-border-inverted);
@@ -30,6 +31,18 @@
   --search-select-bg-color: var(--search-select-bg-color-inverted);
   --blur-text-color: var(--blur-text-color-inverted);
   --item-hover-bg-color: var(--item-hover-bg-color-inverted);
+  --typora-source-body: var(--typora-source-body-inverted);
+
+  --code-neutral: var(--code-neutral-inverted);
+  --code-cursor: var(--code-cursor-inverted);
+  --code-string: var(--code-string-inverted);
+  --code-number: var(--code-number-inverted);
+  --code-tag: var(--code-tag-inverted);
+  --code-variable: var(--code-variable-inverted);
+  --code-operator: var(--code-operator-inverted);
+  --code-comment: var(--code-comment-inverted);
+  --code-bracket: var(--code-bracket-inverted);
+  --code-citation: var(--code-citation-inverted);
 }
 
 titlebar {
