@@ -1,3 +1,8 @@
+---
+author: André van Delft
+title: Tailwind Typography
+---
+
 <img src="tailwind-logo.svg" style="zoom: 150%" />
 
 Until now, trying to style an article, document, or blogpost with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.
@@ -135,8 +140,8 @@ The most annoying thing about lists in Markdown is that `<li>` elements aren't g
 
   But this time with a second paragraph.
 
-  - These list items won't have `<p>` tags
-  - Because they are only one line each
+  * These list items won't have `<p>` tags
+  * Because they are only one line each
 
 - **But in this second top-level list item, they will.**
 
@@ -154,7 +159,11 @@ And finally a sentence to close off this section.
 
 ## There are other elements we need to style
 
-I almost forgot to mention links, like [this link to the Tailwind CSS website](https://tailwindcss.com). We almost made them blue but that's so yesterday, so we went with dark gray, feels edgier.
+I almost forgot to mention links, like [this link to the Tailwind CSS website][tailwind]. We almost made them blue but that's so yesterday, so we went with dark gray, feels edgier.
+
+<!-- The above link makes use of a link-reference. The reference is defined below, which will be displayed in Typora: -->
+
+[tailwind]: https://tailwindcss.com	"Tailwind docs"
 
 We even included table styles, check it out:
 
@@ -167,8 +176,6 @@ We even included table styles, check it out:
 | Razor Ramon             | Chuluota, FL |       Razor's Edge |
 
 We also need to make sure inline code looks good, like if I wanted to talk about `<span>` elements or tell you the good news about `@tailwindcss/typography`.
-
-<!-- Some comment -->
 
 ### Sometimes I even use `code` in headings
 
@@ -337,9 +344,10 @@ spouse: null
 
 ## Typora extensions
 
-Additionally, Typora supports ==highlights==, ~~strikethrough~~, <u>underline</u>, inline formula's like $E = mc^2$ and block-level formula's:
+Additionally, Typora supports ==highlights==, ~~strikethrough~~, <u>underline</u>, inline formula's $E = mc^2$ and block-level formula's:
 $$
-E = mc^2
+R_{\mu \nu} - {1 \over 2}g_{\mu \nu}\,R + g_{\mu \nu} \Lambda = 
+ {8 \pi G \over c^4} T_{\mu \nu}
 $$
 Note that this can sometimes go wrong, like:
 $$
@@ -354,5 +362,52 @@ Also, here's a checklist![^1]
 * [ ] A checklist can have multiple paragraphs
 
    Like this one does. Here is some more text so it will span multiple lines, as you can see now.
+
+* [ ] Some last item. I haven't done a lot yet!
+
+### Diagrams
+
+And, of course, there are diagrams! Examples are copied from [here](https://support.typora.io/Draw-Diagrams-With-Markdown/#sequence-diagrams-options).
+
+#### Sequence
+
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
+#### Flowchart
+
+```flow
+st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
+#### Mermaid
+
+```mermaid
+%% Example of sequence diagram
+  sequenceDiagram
+    Alice->>Bob: Hello Bob, how are you?
+    alt is sick
+    Bob->>Alice: Not so good :(
+    else is well
+    Bob->>Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+    Bob->>Alice: Thanks for asking
+    end
+```
+
+### Table of contents
+
+[TOC]
 
 [^1]: And here is some footnote! What should we do with this?
