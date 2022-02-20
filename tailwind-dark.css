@@ -43,6 +43,15 @@
   --code-comment: var(--code-comment-inverted);
   --code-bracket: var(--code-bracket-inverted);
   --code-citation: var(--code-citation-inverted);
+
+  --footnote-bg: var(--footnote-bg-inverted);
+
+  --md-grid-header: var(--md-grid-header-inverted);
+  --md-grid-header-ext: var(--md-grid-header-ext-inverted);
+  --md-grid-ext: var(--md-grid-ext-inverted);
+  --md-grid-header-active: var(--md-grid-header-active-inverted);
+  --md-grid-active: var(--md-grid-active-inverted);
+  --md-grid-border-color: var(--md-grid-border-color-inverted);
 }
 
 titlebar {

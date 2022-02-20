@@ -45,11 +45,6 @@ It's important to cover all of these use cases for a few reasons:
 2. Really just the first reason, that's the whole point of the plugin.
 3. Here's a third pretend reason though a list with three items looks more realistic than a list with two items.
 
-Here is a checklist!
-
-- [x] I have done this thing
-- [ ] But not this one
-
 Now we're going to try out another header style.
 
 ### Typography should be easy
@@ -130,9 +125,9 @@ Nested lists basically always look bad which is why editors like Medium don't ev
    - Two is already too much, three is guaranteed to be a bad idea.
    - If you nest four levels deep you belong in prison.
 3. **Two items isn't really a list, three is good though.**
-   - Again please don't nest lists if you want people to actually read your content.
-   - Nobody wants to look at this.
-   - I'm upset that we even have to bother styling this.
+   * Again please don't nest lists if you want people to actually read your content.
+   * Nobody wants to look at this.
+   * I'm upset that we even have to bother styling this.
 
 The most annoying thing about lists in Markdown is that `<li>` elements aren't given a child `<p>` tag unless there are multiple paragraphs in the list item. That means I have to worry about styling that annoying situation too.
 
@@ -195,7 +190,7 @@ Phew, with any luck we have styled the headings above this text and they look pr
 
 Let's add a closing paragraph here so things end with a decently sized block of text. I can't explain why I want things to end that way but I have to assume it's because I think things will look weird or unbalanced if there is a heading too close to the end of the document.
 
-What I've written here is probably long enough, but adding this final sentence can't hurt.
+What I've written here is probably long enough, but adding this final sentence can't hurt. If we want to have another line quickly we can always<br>always force a line break in here.
 
 ## Syntax highlighting
 
@@ -339,3 +334,25 @@ spouse: null
   <UsersGrid />
 </>
 ```
+
+## Typora extensions
+
+Additionally, Typora supports ==highlights==, ~~strikethrough~~, <u>underline</u>, inline formula's like $E = mc^2$ and block-level formula's:
+$$
+E = mc^2
+$$
+Note that this can sometimes go wrong, like:
+$$
+E = mc^
+$$
+Also, here's a checklist![^1]
+
+* [x] I have done this thing
+
+* [ ] But not this one
+
+* [ ] A checklist can have multiple paragraphs
+
+   Like this one does. Here is some more text so it will span multiple lines, as you can see now.
+
+[^1]: And here is some footnote! What should we do with this?
