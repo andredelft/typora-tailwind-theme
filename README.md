@@ -1,10 +1,10 @@
 # Tailwind theme for Typora
 
-An implementation of the beautifull [Tailwind Typography](https://tailwindcss.com/docs/typography-plugin) layout for [Typora](https://typora.io):
+An implementation of the beautiful [Tailwind Typography](https://tailwindcss.com/docs/typography-plugin) layout for [Typora](https://typora.io):
 
 ![Screenshot of the Tailwind theme](tailwind-screenshot.png)
 
-A light and dark theme are provided, which use the `prose-xl` class and `slate` color scheme. In particular, the themes are equivalent to:
+A light and dark theme are provided, which use the `prose-xl` class and `slate` grayscale. In particular, the themes are equivalent to:
 
 ```html
 <article class="prose prose-xl prose-slate dark:prose-invert dark:bg-slate-800">
@@ -28,7 +28,7 @@ The `slate` grayscale can be modified by overriding the `--theme-X` variables in
 
 ```css
 :root {
-  /* Zinc color scheme */
+  /* Zinc grayscale */
   --theme-50: #fafafa;
   --theme-100: #f4f4f5;
   --theme-200: #e4e4e7;
@@ -48,7 +48,7 @@ Refer to the [Tailwind docs](https://tailwindcss.com/docs/background-color) for 
 
 ### Font
 
-The default Tailwind font is [Inter](https://rsms.me/inter). A different font-family, as well as general adjustments like font-size and line-height can be defined at the `#write` selector:
+The default Tailwind font is [Inter](https://rsms.me/inter). A different font-family, as well as general adjustments like font-size and line-height can be defined using the `#write` selector:
 
 ```css
 #write {
@@ -69,4 +69,4 @@ If the chosen font is not in proportion to the monospace font (as is the case wi
 }
 ```
 
-Additionally, the monospace font can be customized through the `--monospace` variable.
+Additionally, the monospace font-family can be customized through the `--monospace` variable.
