@@ -82,17 +82,17 @@ Sometimes you have headings directly underneath each other. In those cases you o
 
 When a heading comes after a paragraph, we need a bit more space, like I already mentioned above. Now let's see what a more complex list would look like.
 
-- **I often do this thing where list items have headings.**
+* **I often do this thing where list items have headings.**
 
   For some reason I think this looks cool which is unfortunate because it's pretty annoying to get the styles right.
 
   I often have two or three paragraphs in these list items, too, so the hard part is getting the spacing between the paragraphs, list item heading, and separate list items to all make sense. Pretty tough honestly, you could make a strong argument that you just shouldn't write this way.
 
-- **Since this is a list, I need at least two items.**
+* **Since this is a list, I need at least two items.**
 
   I explained what I'm doing already in the previous list item, but a list wouldn't be a list if it only had one item, and we really want this to look realistic. That's why I've added this second list item so I actually have something to look at when writing the styles.
 
-- **It's not a bad idea to add a third item either.**
+* **It's not a bad idea to add a third item either.**
 
   I think it probably would've been fine to just use two items but three is definitely not worse, and since I seem to be having no trouble making up arbitrary things to type, I might as well include it.
 
@@ -411,3 +411,4 @@ cond(no)->op
 [TOC]
 
 [^1]: And here is some footnote! What should we do with this?
+
