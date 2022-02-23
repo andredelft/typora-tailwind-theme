@@ -12,8 +12,6 @@ A light and dark theme are provided, which use the `prose-xl` class and `slate` 
 </article>
 ```
 
-**NB: This theme is still a work in progress**. Refer to the [issues page](https://github.com/andredelft/typora-tailwind-theme/issues) for a rundown of to-do's.
-
 ## Installation
 
 1. Go to the Typora theme folder (reachable via the settings menu: Appearance > Open theme folder)
