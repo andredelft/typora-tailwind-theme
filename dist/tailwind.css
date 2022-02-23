@@ -148,6 +148,9 @@
   --md-grid-header-active-inverted: var(--theme-400);
   --md-grid-active-inverted: var(--theme-500);
   --md-grid-border-color-inverted: var(--theme-200);
+
+  --code-blocks-font-size: 0.9em;
+  --inline-code-font-size: 0.9em;
 }
 
 .ty-file-search-match-text {
@@ -436,7 +439,7 @@ pre.md-meta-block {
   color: var(--tw-prose-meta);
   background-color: var(--tw-prose-meta-bg);
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: var(--code-blocks-font-size);
   line-height: 1.7777778;
   border-radius: 0.5rem /* 8px */;
   padding: 1.1111111em 1.3333333em;
@@ -797,6 +800,7 @@ g[data-mml-node="merror"] > g {
 .md-htmlblock-panel.md-rawblock-control,
 .md-math-container {
   border-radius: 0.5rem 0 0.5rem 0.5rem;
+  font-size: var(--code-blocks-font-size);
 }
 
 .md-mathblock-panel .md-rawblock-input.md-rawblock-control {
@@ -818,6 +822,7 @@ g[data-mml-node="merror"] > g {
 
 .md-mathblock-panel .md-rawblock-before,
 .md-mathblock-panel .md-rawblock-after {
+  font-size: var(--code-blocks-font-size);
   padding-left: calc(4px + 1.3333333em);
   color: var(--code-bracket);
 }
@@ -832,7 +837,16 @@ g[data-mml-node="merror"] > g {
 }
 
 .md-comment {
+  font-size: var(--inline-code-font-size);
   color: var(--code-comment);
+}
+
+.md-raw-inline,
+.md-tag,
+[md-inline="linebreak"],
+.md-image > .md-meta,
+.md-inline-math.md-expand > .md-inline-math-container {
+  font-size: var(--code-blocks-font-size);
 }
 
 /**
@@ -844,7 +858,7 @@ g[data-mml-node="merror"] > g {
   color: var(--tw-prose-pre-code);
   background-color: var(--tw-prose-pre-bg);
   font-weight: 400;
-  font-size: 0.9em;
+  font-size: var(--code-blocks-font-size);
   line-height: 1.7777778;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -1004,7 +1018,7 @@ pre code::after {
 code {
   color: var(--tw-prose-code);
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: var(--inline-code-font-size);
 }
 
 code::before {
