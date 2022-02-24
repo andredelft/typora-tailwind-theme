@@ -62,7 +62,7 @@ Something a wise person once told me about typography is:
 
 It's probably important that images look okay here by default as well:
 
-![img](https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
+![Image caption](https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
 
 Now I'm going to show you an example of an unordered list to make sure that looks good, too:
 
@@ -82,17 +82,17 @@ Sometimes you have headings directly underneath each other. In those cases you o
 
 When a heading comes after a paragraph, we need a bit more space, like I already mentioned above. Now let's see what a more complex list would look like.
 
-* **I often do this thing where list items have headings.**
+- **I often do this thing where list items have headings.**
 
   For some reason I think this looks cool which is unfortunate because it's pretty annoying to get the styles right.
 
   I often have two or three paragraphs in these list items, too, so the hard part is getting the spacing between the paragraphs, list item heading, and separate list items to all make sense. Pretty tough honestly, you could make a strong argument that you just shouldn't write this way.
 
-* **Since this is a list, I need at least two items.**
+- **Since this is a list, I need at least two items.**
 
   I explained what I'm doing already in the previous list item, but a list wouldn't be a list if it only had one item, and we really want this to look realistic. That's why I've added this second list item so I actually have something to look at when writing the styles.
 
-* **It's not a bad idea to add a third item either.**
+- **It's not a bad idea to add a third item either.**
 
   I think it probably would've been fine to just use two items but three is definitely not worse, and since I seem to be having no trouble making up arbitrary things to type, I might as well include it.
 
@@ -130,9 +130,9 @@ Nested lists basically always look bad which is why editors like Medium don't ev
    - Two is already too much, three is guaranteed to be a bad idea.
    - If you nest four levels deep you belong in prison.
 3. **Two items isn't really a list, three is good though.**
-   * Again please don't nest lists if you want people to actually read your content.
-   * Nobody wants to look at this.
-   * I'm upset that we even have to bother styling this.
+   - Again please don't nest lists if you want people to actually read your content.
+   - Nobody wants to look at this.
+   - I'm upset that we even have to bother styling this.
 
 The most annoying thing about lists in Markdown is that `<li>` elements aren't given a child `<p>` tag unless there are multiple paragraphs in the list item. That means I have to worry about styling that annoying situation too.
 
@@ -140,8 +140,8 @@ The most annoying thing about lists in Markdown is that `<li>` elements aren't g
 
   But this time with a second paragraph.
 
-  * These list items won't have `<p>` tags
-  * Because they are only one line each
+  - These list items won't have `<p>` tags
+  - Because they are only one line each
 
 - **But in this second top-level list item, they will.**
 
@@ -163,7 +163,7 @@ I almost forgot to mention links, like [this link to the Tailwind CSS website][t
 
 <!-- The above link makes use of a link-reference. The reference is defined below, which will be displayed in Typora: -->
 
-[tailwind]: https://tailwindcss.com	"Tailwind docs"
+[tailwind]: https://tailwindcss.com "Tailwind docs"
 
 We even included table styles, check it out:
 
@@ -345,25 +345,38 @@ spouse: null
 ## Typora extensions
 
 Additionally, Typora supports ==highlights==, ~~strikethrough~~, <u>underline</u>, inline formula's $E = mc^2$ and block-level formula's:
+
 $$
-R_{\mu \nu} - {1 \over 2}g_{\mu \nu}\,R + g_{\mu \nu} \Lambda = 
- {8 \pi G \over c^4} T_{\mu \nu}
+R_{\mu \nu} - {1 \over 2}g_{\mu \nu}\,R + g_{\mu \nu} \Lambda =
+{8 \pi G \over c^4} T_{\mu \nu}
 $$
+
 Note that this can sometimes go wrong, like:
+
 $$
 E = mc^
 $$
+
+Tailwind also supports HTML blocks:
+
+<div style="display: flex; justify-content: center;">
+  <p style="margin: 0;">
+   Look at this text!<br>
+    It's centered!
+  </p>
+</div>
+
 Also, here's a checklist![^1]
 
-* [x] I have done this thing
+- [x] I have done this thing
 
-* [ ] But not this one
+- [ ] But not this one
 
-* [ ] A checklist can have multiple paragraphs
+- [ ] A checklist can have multiple paragraphs
 
-   Like this one does. Here is some more text so it will span multiple lines, as you can see now.
+  Like this one does. Here is some more text so it will span multiple lines, as you can see now.
 
-* [ ] Some last item. I haven't done a lot yet!
+- [ ] Some last item. I haven't done a lot yet!
 
 ### Diagrams
 
@@ -411,4 +424,3 @@ cond(no)->op
 [TOC]
 
 [^1]: And here is some footnote! What should we do with this?
-

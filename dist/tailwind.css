@@ -800,7 +800,11 @@ g[data-mml-node="merror"] > g {
 .md-htmlblock-panel.md-rawblock-control,
 .md-math-container {
   border-radius: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.md-rawblock-input {
   font-size: var(--code-blocks-font-size);
+  padding: 0 1.3333333em;
 }
 
 .md-mathblock-panel .md-rawblock-input.md-rawblock-control {
@@ -818,6 +822,11 @@ g[data-mml-node="merror"] > g {
   padding-bottom: 1.1em;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+}
+
+.md-htmlblock-panel .md-rawblock-input {
+  padding-top: 1.1111111em;
+  padding-bottom: 1.1111111em;
 }
 
 .md-mathblock-panel .md-rawblock-before,
