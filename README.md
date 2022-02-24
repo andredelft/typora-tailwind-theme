@@ -2,7 +2,7 @@
 
 An implementation of the beautiful [Tailwind Typography](https://tailwindcss.com/docs/typography-plugin) layout for [Typora](https://typora.io):
 
-![Screenshot of the Tailwind theme](tailwind-screenshot.png)
+![Screenshot of the Tailwind theme](media/tailwind-screenshot.png)
 
 A light and dark theme are provided, which use the `prose-xl` class and `slate` grayscale. In particular, the themes are equivalent to:
 
@@ -70,3 +70,42 @@ If the chosen font is not in proportion to the monospace font (as is the case wi
 ```
 
 Additionally, the monospace font-family can be customized through the `--monospace` variable.
+
+
+
+## Screenshots
+
+### Outline
+
+![Outline](media/twty-outline.png)
+
+![Outline (Dark)](media/twty-outline-dark.png)
+
+### Lists
+
+![Lists](media/twty-lists.png)
+
+![Lists (Dark)](media/twty-lists-dark.png)
+
+### Tables
+
+![Tables](media/twty-table.png)
+
+### Codeblocks
+
+![Codeblocks](media/twty-codeblocks.png)
+
+### Extensions
+
+![Extensions](media/twty-extensions.png)
+
+![Diagrams](media/twty-diagrams.png)
+
+![Diagrams (Dark)](media/twty-diagrams-dark.png)
+
+### Source code mode
+
+![Source mode](media/twty-source.png)
+
+![Source mode (Dark)](media/twty-source-dark.png)
+
