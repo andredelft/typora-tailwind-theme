@@ -87,11 +87,9 @@ Additionally, the monospace font-family can be customized through the `--monospa
 
 ![Lists (Dark)](media/twty-lists-dark.png)
 
-### Tables
+### Other styles
 
-![Tables](media/twty-table.png)
-
-### Codeblocks
+![Other styles](media/twty-table.png)
 
 ![Codeblocks](media/twty-codeblocks.png)
 
