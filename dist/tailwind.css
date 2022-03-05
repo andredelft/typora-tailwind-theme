@@ -1038,6 +1038,11 @@ code::after {
   content: "`";
 }
 
+[md-inline="code"].md-expand > code::before,
+[md-inline="code"].md-expand > code::after {
+  content: "";
+}
+
 a code {
   color: var(--tw-prose-links);
 }
