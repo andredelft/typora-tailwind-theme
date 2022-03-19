@@ -128,11 +128,14 @@
     "Liberation Mono", "Courier New", monospace;
 
   /* Custom */
-  --footnote: var(--theme-800);
-  --footnote-bg: var(--theme-200);
+  --footnote: var(--tw-prose-body);
+  /* I'd love to use the --theme grayscale for --footnote-bg, but there's (currently) 
+  no way to add an alpha-channel to a CSS variable (and we need the transparency
+  because otherwise the caret wil not be visible), so I here just used a hardcoded
+  copy of --theme-500 */
+  --footnote-bg: #94a3b855;
   --button-bg: var(--theme-200);
 
-  --footnote-bg-inverted: var(--theme-400);
   --button-bg-inverted: var(--theme-600);
 
   --md-grid-header: var(--theme-100);
