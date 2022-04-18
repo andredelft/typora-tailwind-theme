@@ -21,6 +21,8 @@
   --tw-prose-meta: var(--tw-prose-invert-meta);
   --tw-prose-meta-bg: var(--tw-prose-invert-meta-bg);
 
+  --tw-button-hover-bg: var(--tw-button-hover-bg-inverted);
+
   --md-char-color: var(--md-char-color-inverted);
   --meta-content-color: var(--meta-content-color-inverted);
   --panel-border-color: var(--panel-border-color-inverted);
@@ -33,6 +35,7 @@
   --item-hover-bg-color: var(--item-hover-bg-color-inverted);
   --typora-source-body: var(--typora-source-body-inverted);
   --mermaid-theme: var(--mermaid-theme-inverted);
+  --active-toggle-btn-color: var(--active-toggle-btn-color-inverted);
 
   --code-neutral: var(--code-neutral-inverted);
   --code-cursor: var(--code-cursor-inverted);

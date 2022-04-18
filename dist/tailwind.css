@@ -82,6 +82,9 @@
   --tw-highlight-color: #fde047; /* yellow-300 */
   --tw-drop-shadow-md: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
     drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  --tw-button-hover-bg: var(--theme-100);
+
+  --tw-button-hover-bg-inverted: var(--theme-700);
 
   /* Typora variables */
 
@@ -94,11 +97,13 @@
   --typora-source-body: var(--theme-800);
   --heading-char-color: var(--md-char-color);
   --mermaid-theme: neutral;
+  --active-toggle-btn-color: var(--theme-200);
 
   --md-char-color-inverted: var(--theme-500);
   --meta-content-color-inverted: var(--theme-400);
   --typora-source-body-inverted: var(--theme-300);
   --mermaid-theme-inverted: dark;
+  --active-toggle-btn-color-inverted: var(--theme-400);
 
   /* Sidebar */
   --side-bar-bg-color: var(--tw-prose-bg);
@@ -129,7 +134,7 @@
 
   /* Custom */
   --footnote: var(--tw-prose-body);
-  /* I'd love to use the --theme grayscale for --footnote-bg, but there's (currently) 
+  /* I'd love to use the --theme grayscale for --footnote-bg, but there's (currently)
   no way to add an alpha-channel to a CSS variable (and we need the transparency
   because otherwise the caret wil not be visible), so I here just used a hardcoded
   copy of --theme-500 */
@@ -1170,6 +1175,33 @@ mark {
 .md-search-hit {
   color: var(--search-hit-text-font-color);
   background-color: var(--search-hit-text-bg-color);
+}
+
+#md-searchpanel {
+  box-shadow: none;
+  filter: var(--tw-drop-shadow-md);
+}
+
+#md-searchpanel .btn:not(.close-btn):hover {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background-color: var(--tw-button-hover-bg);
+}
+
+#md-searchpanel input,
+#md-searchpanel .btn,
+#searchpanel-msg {
+  border-radius: 5px;
+}
+
+#searchpanel-msg {
+  color: var(--theme-500);
+  border-color: var(--theme-300);
+  background: var(--theme-100);
+}
+
+.form-control {
+  border-color: var(--panel-border-color);
 }
 
 .btn-default {
