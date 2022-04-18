@@ -197,7 +197,7 @@ Phew, with any luck we have styled the headings above this text and they look pr
 
 Let's add a closing paragraph here so things end with a decently sized block of text. I can't explain why I want things to end that way but I have to assume it's because I think things will look weird or unbalanced if there is a heading too close to the end of the document.
 
-What I've written here is probably long enough, but adding this final sentence can't hurt. If we want to have another line quickly we can always<br>always force a line break in here.
+What I've written here is probably long enough, but adding this final sentence can't hurt. If we want to have another line quickly we can always<br>force a line break in here.
 
 ## Syntax highlighting
 
@@ -328,7 +328,8 @@ spouse: null
           key={i}
           className={
             tabName === activeTab
-              ? "font-semibold p-2"  : "block p-2 transition-colors rounded-md hover:bg-transparent-white cursor-pointer"
+              ? "font-semibold p-2" 
+              : "block p-2 rounded-md hover:bg-transparent-white cursor-pointer"
           }
           onClick={() => setActiveTab(tabName)}
         >
@@ -362,9 +363,7 @@ Tailwind also supports HTML blocks:
 Also, here's a checklist![^1]
 
 - [x] I have done this thing
-
 - [ ] But not this one
-
 - [ ] A checklist can have multiple paragraphs
 
   Like this one does. Here is some more text so it will span multiple lines, as you can see now.
