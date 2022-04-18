@@ -913,12 +913,6 @@ pre code::after {
   content: none;
 }
 
-#write .CodeMirror-line {
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
-}
-
 /* SYNTAX HIGHLIGHTING */
 
 :root {
