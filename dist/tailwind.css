@@ -1049,6 +1049,10 @@ a code {
   color: var(--tw-prose-links);
 }
 
+mark code {
+  color: inherit;
+}
+
 strong {
   color: var(--tw-prose-bold);
   font-weight: 600;
