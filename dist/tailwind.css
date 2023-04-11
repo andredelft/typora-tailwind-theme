@@ -88,6 +88,11 @@
 
   /* Typora variables */
 
+  --select-text-bg-color: #7dd3fc80; /* sky-300/50 */
+  --select-text-bg-color-dark: #0ea5e980; /* sky-500/50 */
+  --select-text-font-color: var(--theme-900);
+  --select-text-font-color-dark: var(--theme-50);
+
   --background: var(--tw-prose-bg);
   --bg-color: var(--tw-prose-bg);
   --text-color: var(--tw-prose-body);

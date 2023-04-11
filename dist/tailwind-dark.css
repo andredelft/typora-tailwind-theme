@@ -23,6 +23,9 @@
 
   --tw-button-hover-bg: var(--tw-button-hover-bg-inverted);
 
+  --select-text-bg-color: var(--select-text-bg-color-dark);
+  --select-text-font-color: var(--select-text-font-color-dark);
+
   --md-char-color: var(--md-char-color-inverted);
   --meta-content-color: var(--meta-content-color-inverted);
   --panel-border-color: var(--panel-border-color-inverted);
