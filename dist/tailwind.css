@@ -713,6 +713,10 @@ blockquote {
   padding-left: 1.0666667em;
 }
 
+blockquote strong {
+  font-weight: 700;
+}
+
 blockquote p:first-of-type::before {
   content: open-quote;
 }
@@ -1052,10 +1056,6 @@ code::after {
 
 a code {
   color: var(--tw-prose-links);
-}
-
-mark code {
-  color: inherit;
 }
 
 strong {
