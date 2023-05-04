@@ -60,3 +60,21 @@
   --md-grid-active: var(--md-grid-active-inverted);
   --md-grid-border-color: var(--md-grid-border-color-inverted);
 }
+
+.megamenu-menu,
+#top-titlebar,
+#top-titlebar *,
+.megamenu-content {
+  background: var(--theme-800);
+  color: var(--theme-200);
+}
+
+.megamenu-menu-panel table tr td,
+.megamenu-menu-panel table tr th {
+  background-color: var(--theme-800);
+}
+
+.megamenu-menu-panel table tr:hover td,
+.megamenu-menu-panel table tr:hover th {
+  background-color: var(--theme-700);
+}
