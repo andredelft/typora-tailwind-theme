@@ -577,7 +577,7 @@ tbody tr:last-child {
 }
 
 tbody td {
-  vertical-align: baseline;
+  vertical-align: top;
   padding-top: 0.8888889em;
   padding-right: 0.6666667em;
   padding-bottom: 0.8888889em;
