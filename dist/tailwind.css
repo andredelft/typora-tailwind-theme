@@ -761,6 +761,14 @@ sup.md-footnote {
   background-color: var(--footnote-bg);
 }
 
+@media print {
+  sup.md-footnote {
+    color: var(--tw-prose-body);
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
 .footnotes {
   font-size: 0.85em;
 }
@@ -780,6 +788,19 @@ sup.md-footnote {
 
 .md-reverse-footnote-area a:hover {
   background-color: var(--item-hover-bg-color);
+}
+
+.footnotes-area hr {
+  margin: 5rem 0 2rem;
+}
+
+.footnote-line {
+  font-size: 0.85em;
+  color: var(--tw-prose-body);
+}
+
+a.reversefootnote {
+  text-decoration: none;
 }
 
 .md-def-name:before {
