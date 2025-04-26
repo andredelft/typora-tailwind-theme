@@ -107,3 +107,11 @@ Additionally, the monospace font-family can be customized through the `--monospa
 
 ![Source mode (Dark)](media/twty-source-dark.png)
 
+### Github style alerts
+
+New in version 1.2.0
+
+![GitHub style alerts](media/twty-alerts.png)
+
+![GitHub style alerts (Dark)](media/twty-alerts-dark.png)
+

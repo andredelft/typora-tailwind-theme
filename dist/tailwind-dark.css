@@ -1,7 +1,8 @@
 @import "tailwind.css";
 @import "tailwind.user.css";
 
-:root {
+:root,
+.md-alert {
   --tw-prose-body: var(--tw-prose-invert-body);
   --tw-prose-headings: var(--tw-prose-invert-headings);
   --tw-prose-lead: var(--tw-prose-invert-lead);
@@ -59,6 +60,8 @@
   --md-grid-header-active: var(--md-grid-header-active-inverted);
   --md-grid-active: var(--md-grid-active-inverted);
   --md-grid-border-color: var(--md-grid-border-color-inverted);
+
+  --alert-heading: var(--alert-heading-inverted);
 }
 
 .megamenu-menu,

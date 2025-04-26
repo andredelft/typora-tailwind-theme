@@ -411,6 +411,33 @@ cond(no)->op
     end
 ```
 
+### GitHub style alerts
+
+Typora has added support for in version 1.8!🎉
+
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+>
+> > Maybe I want to add a quote as well?
+
+> [!IMPORTANT]
+> Crucial information **necessary** for users to succeed.
+
+> [!WARNING]
+> Critical content demanding [immediate user attention](#) due to potential risks.
+>
+> * You should style list markers inside this warning
+> * So that lists blend well with the message container
+>
+
+Here is some normal text in between two alerts
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
 ### Table of contents
 
 [TOC]
